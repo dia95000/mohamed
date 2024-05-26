@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Mohammed's Calculator </title>
+      <style>
+	body{
+	background-color: pink;
+	}
+        table{
+            background-color: rgb(168, 70, 155) ;
+            padding: 5px;
+            border: 4px solid red;
+        }
+        .result{
+            
+        }
+        button{
+            font-size: 30px;
+            width: 80px;
+            height: 60px;
+            border-radius: 20px;
+        }
+        button:hover{
+            cursor: pointer;
+            border: 3px solid black;
+            box-shadow: 5px 5px 5px rgb(168, 163, 163);
+        }
+        input{
+            font-size: 30px;
+            color: white;
+            height: 40px;
+            width: 350px;
+            size:34;
+            border: 2px solid black;
+            background-color: rgb(15, 15, 15);
+        }
+        .maker{
+            font-size: 26px;
+            text-align: center;
+            background-color: aqua;
+            
+        }
+
+      </style>
+      
+    </head>
+    <body >    
+        <table>
+            <tr>
+                <td colspan="4" class="maker">  <B> Made by Mohammed Dia </B>  </td> 
+            </tr>
+            <tr class="result">
+                <td colspan="4"> <input class="result-box"> </td> 
+            </tr>
+
+            <tr>
+                <td> <button class="bc"  onclick="
+                    document.querySelector('.result-box').value ='';
+                    "> C </button> </td>
+                <td> <button class="b2" value="2" onclick="
+                document.querySelector('.result-box').value += '(';
+                "> ( </button> </td> 
+                <td> <button class="b3" value="3" onclick="
+                document.querySelector('.result-box').value += ')';
+                "> ) </button> </td> 
+                <td> <button class="ba" value="+" onclick="
+                document.querySelector('.result-box').value += '%';
+                "> % </button> </td>
+            </tr>
+
+            <tr>
+                <td> <button class="b1" value="1" onclick="
+                   document.querySelector('.result-box').value += 1;
+                    " > 1 </button> </td> 
+                <td> <button class="b2" value="2" onclick="
+                document.querySelector('.result-box').value += 2;
+                "> 2 </button> </td> 
+                <td> <button class="b3" value="3" onclick="
+                document.querySelector('.result-box').value += 3;
+                "> 3 </button> </td> 
+                <td> <button class="ba" value="+" onclick="
+                document.querySelector('.result-box').value += '+';
+                "> + </button> </td>
+            </tr>
+            <tr>
+                <td> <button class="b4" value="4" onclick="
+                    document.querySelector('.result-box').value += 4;
+                    " > 4 </button> </td> 
+                <td> <button class="b5" value="5" onclick="
+                    document.querySelector('.result-box').value += 5;
+                "> 5 </button> </td> 
+                <td> <button class="b6" value="6" onclick="
+                    document.querySelector('.result-box').value += 6
+                "> 6 </button> </td> 
+                <td> <button class="bs" value="-" onclick="
+                    document.querySelector('.result-box').value += '-';
+                "> - </button> </td>
+            </tr>
+            <tr>
+                <td> <button class="b7" value="7" onclick="
+                    document.querySelector('.result-box').value += 7;
+                    " > 7 </button> </td> 
+                <td> <button class="b8" value="8" onclick="
+                    document.querySelector('.result-box').value += 8;
+                "> 8 </button> </td> 
+                <td> <button class="b9" value="9" onclick="
+                    document.querySelector('.result-box').value += 9;
+                "> 9 </button> </td> 
+                <td> <button class="bm" value="*" onclick="
+                document.querySelector('.result-box').value += '*';
+                "> * </button> </td>
+            </tr>
+            <tr>
+                <td> <button class="be"  onclick="
+                    let x = document.querySelector('.result-box').value;
+                    document.querySelector('.result-box').value =  eval(x);
+                    " > = </button> </td> 
+                <td> <button class="b0" value="0" onclick="
+                    document.querySelector('.result-box').value += 0;
+                "> 0 </button> </td> 
+                <td> <button class="bdot" value="." onclick="
+                document.querySelector('.result-box').value += '.';
+                "> . </button> </td> 
+                <td> <button class="bd" value="/" onclick="
+                document.querySelector('.result-box').value += '/';
+                "> / </button> </td>
+            </tr>
+            
+
+
+
+
+
+
+
+
+
+
+        </table>
+
+
+    </body>
+</html>
