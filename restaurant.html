@@ -6,27 +6,149 @@
 
     </head>
     <body>
-        <div  class="title-div"> <b> anything </b> </div>   
+        <div  class="title-div"> <b> Menu </b> </div>   
         <div class="main-div">
             <div class="col1-div">
-                <div class="img-div"> <img src="img2/t1.webp"> </div>
-                <div class="img-title-div"> This is a picture from the famous movie finding nemo </div>
+                <div class="img-div"> <img src="img2/nuggets.jfif"> </div>
+                <div class="img-title-div"> 
+                    <div> <b>Chicken nuggets dish</b> (8 pieces): <br>  Price: 10 SAR</div>
+                    <div class="amount-div"> 
+                        <label>Add to Cart 
+                            <input type="checkbox" id="check-item"    name="item1" class="item1" onchange="claculateAmount()">
+                        </label>
+                        <br>
+                        Quantity    <select class="quantity1" name="quantity1" onchange="claculateAmount()">
+                                        <option value="1"> 1 </option>
+                                        <option value="2"> 2 </option>
+                                        <option value="3"> 3 </option>
+                                        <option value="4"> 4 </option>
+                                        <option value="5"> 5 </option>
+                                        <option value="6"> 6 </option>
+                                        <option value="7"> 7 </option>
+                                        <option value="8"> 8 </option>
+                                        <option value="9"> 9 </option>
+                                        <option value="10"> 10 </option>
+                                    </select>  
+                                    &nbsp; &nbsp; &nbsp;
+                        Amount <input class="amount1"  name="amount1">
+                    </div>
+                
+                
+                </div>
                 
             </div>
-            <div class="col1-div">
-                <div class="img-div"> <video  width="600" height="500" controls> <source src="movies/TomAndJerry.mp4"> </video> </div>
-                <div class="img-title-div"> This is a picture from the famous movie finding nemo </div>
+            <div class="col2-div">
+                <div class="img-div">  <img src="img2/pizza.jfif">  </div>
+                <div class="img-title-div"> 
+                    <div> <b>Pizza</b> (large): <br>  Price: 20 SAR</div>
+                    <div class="amount-div"> 
+                        <label>Add to Cart 
+                            <input type="checkbox" id="check-item"    name="item2" class="item2" onchange="claculateAmount2()">
+                        </label>
+                        <br>
+                        Quantity    <select class="quantity2" name="quantity2" onchange="claculateAmount2()">
+                                        <option value="1"> 1 </option>
+                                        <option value="2"> 2 </option>
+                                        <option value="3"> 3 </option>
+                                        <option value="4"> 4 </option>
+                                        <option value="5"> 5 </option>
+                                        <option value="6"> 6 </option>
+                                        <option value="7"> 7 </option>
+                                        <option value="8"> 8 </option>
+                                        <option value="9"> 9 </option>
+                                        <option value="10"> 10 </option>
+                                    </select>  
+                                    &nbsp; &nbsp; &nbsp;
+                        Amount <input class="amount2"  name="amount2">
+                    </div>
+                
+                
+                </div>
                 
             </div>
-            <div class="col1-div">
-                <div class="img-div"> <img src="img2/f1.webp"> </div>
-                <div class="img-title-div"> This is a picture from the famous movie finding nemo </div>
+            <div class="col3-div">
+                <div class="img-div"> <img src="img2/burger.jfif"> </div>
+                <div class="img-title-div"> 
+                    <div> <b>Burger sandwich</b> (large): <br>  Price: 7 SAR</div>
+                    <div class="amount-div"> 
+                        <label>Add to Cart 
+                            <input type="checkbox" id="check-item"    name="item3" class="item3" onchange="claculateAmount3()">
+                        </label>
+                        <br>
+                        Quantity    <select class="quantity3" name="quantity3" onchange="claculateAmount3()">
+                                        <option value="1"> 1 </option>
+                                        <option value="2"> 2 </option>
+                                        <option value="3"> 3 </option>
+                                        <option value="4"> 4 </option>
+                                        <option value="5"> 5 </option>
+                                        <option value="6"> 6 </option>
+                                        <option value="7"> 7 </option>
+                                        <option value="8"> 8 </option>
+                                        <option value="9"> 9 </option>
+                                        <option value="10"> 10 </option>
+                                    </select>  
+                                    &nbsp; &nbsp; &nbsp;
+                        Amount <input class="amount3"  name="amount3">
+                    </div>
+                
+                
+                </div>
                 
             </div>
 
         </div>
 
 
+        <script>
+
+            function claculateAmount()
+            {
+                let price1 = 10;
+                let quantity1 = document.querySelector('.quantity1').value;
+                let item1 = document.querySelector('.item1').checked;
+                let amount1 = 0;
+                if(item1){
+                    amount1 = quantity1 * price1 ;
+                } 
+                else {
+                    amount1 = 0;
+                }
+                    document.querySelector('.amount1').value = amount1;
+            }
+
+            function claculateAmount2()
+            {
+                let price2 = 20;
+                let quantity2 = document.querySelector('.quantity2').value;
+                let item2 = document.querySelector('.item2').checked;
+                let amount2 = 0;
+                if(item2){
+                    amount2 = quantity2 * price2 ;
+                } 
+                else {
+                    amount2 = 0;
+                }
+                    document.querySelector('.amount2').value = amount2;
+            }
+
+            function claculateAmount3()
+            {
+                let price3 = 7;
+                let quantity3 = document.querySelector('.quantity3').value;
+                let item3 = document.querySelector('.item3').checked;
+                let amount3 = 0;
+                if(item3){
+                    amount3 = quantity3 * price3 ;
+                } 
+                else {
+                    amount3 = 0;
+                }
+                    document.querySelector('.amount3').value = amount3;
+            }
+
+
+
+        </script>
     </body>
 
 
