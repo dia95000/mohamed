@@ -16,7 +16,7 @@
                 margin: 10px 5px;
                 padding: 10px;
                 border-radius: 20px;
-            
+
                 border-width: 4px;
                 border-color: black;
                 border-style: solid;
@@ -30,14 +30,14 @@
                     grid-template-columns: 1fr;
                 }
             }
-            
+
             @media ((min-width:1031px) and  (max-width:1200px)){
                 .main-div{
                     grid-template-columns: 1fr 1fr;
                 }
             }
-            
-            .col1-div , .col2-div , .col3-div{
+
+            .col1-div {
                 border-width: 4px;
                 border-color: black;
                 border-style: solid;
@@ -45,27 +45,16 @@
                 border-radius: 20px;
                 background-color: yellow;
                 margin: 5px;
-            
+
             }
             .col1-div div{
                 border-bottom-width: 2px;
                 border-bottom-color: rgb(170, 166, 167);
                 border-bottom-style: solid;
             }
-             .col2-div div{
-                border-bottom-width: 2px;
-                border-bottom-color: rgb(170, 166, 167);
-                border-bottom-style: solid;
-            }
-             .col3-div div{
-                border-bottom-width: 2px;
-                border-bottom-color: rgb(170, 166, 167);
-                border-bottom-style: solid;
-            }
-            
             .img-div img{
                 width:100% ;
-                height: 400px;
+                height: 500px;
                 border-radius: 10px;
                 
             }
@@ -80,19 +69,19 @@
             .img-title-div{
                 margin-top: 10px;
                 padding: 4px;
-                font-size: 20px;
+                font-size: 30px;
                 background-color: rgb(216, 213, 213);
                 border-radius: 10px;
-            
+
             }
             .amount-div{
-                font-size: 30px;
+                font-size: 35px;
                 
-               
+            
             }
             .amount-div input{
                 font-size: 30px;
-                width: 100px;
+                width: 60px;
                 padding: ;
             }
             .amount-div select{
@@ -102,7 +91,22 @@
                 height: 30px;
                 width: 30px;
             }
-            
+
+            .total-amount-div{
+                background-color: rgb(25, 27, 27);
+                color: white;
+                font-size: 50px;
+                
+                margin: 10px 5px;
+                padding: 10px;
+                border-radius: 20px;
+
+                border-width: 4px;
+                border-color: aqua;
+                border-style: solid;
+                padding: 30px 10px;
+            }
+
         </style>
 
     </head>
@@ -138,7 +142,7 @@
                 </div>
                 
             </div>
-            <div class="col2-div">
+            <div class="col1-div">
                 <div class="img-div">  <img src="img2/pizza.jfif">  </div>
                 <div class="img-title-div"> 
                     <div> <b>Pizza</b> (large): <br>  Price: 20 SAR</div>
@@ -167,7 +171,7 @@
                 </div>
                 
             </div>
-            <div class="col3-div">
+            <div class="col1-div">
                 <div class="img-div"> <img src="img2/burger.jfif"> </div>
                 <div class="img-title-div"> 
                     <div> <b>Burger sandwich</b> (large): <br>  Price: 7 SAR</div>
@@ -197,17 +201,119 @@
                 
             </div>
 
+            <div class="col1-div">
+                <div class="img-div"> <img src="img2/OIP (1).jfif"> </div>
+                <div class="img-title-div"> 
+                    <div> <b>Cupcake</b> <br>  Price: 5 SAR</div>
+                    <div class="amount-div"> 
+                        <label>Add to Cart 
+                            <input type="checkbox" id="check-item"    name="item4" class="item4" onchange="claculateAmount4()">
+                        </label>
+                        <br>
+                        Quantity    <select class="quantity4" name="quantity4" onchange="claculateAmount4()">
+                                        <option value="1"> 1 </option>
+                                        <option value="2"> 2 </option>
+                                        <option value="3"> 3 </option>
+                                        <option value="4"> 4 </option>
+                                        <option value="5"> 5 </option>
+                                        <option value="6"> 6 </option>
+                                        <option value="7"> 7 </option>
+                                        <option value="8"> 8 </option>
+                                        <option value="9"> 9 </option>
+                                        <option value="10"> 10 </option>
+                                    </select>  
+                                    &nbsp; &nbsp; &nbsp;
+                        Amount <input class="amount4"  name="amount4">
+                    </div>
+                
+                
+                </div>
+                
+            </div>
+
+            <div class="col1-div">
+                <div class="img-div"> <img src="img2/OIP.jfif"> </div>
+                <div class="img-title-div"> 
+                    <div> <b>Rainbow Cake</b> (large): <br>  Price: 20 SAR</div>
+                    <div class="amount-div"> 
+                        <label>Add to Cart 
+                            <input type="checkbox" id="check-item"    name="item5" class="item5" onchange="claculateAmount5()">
+                        </label>
+                        <br>
+                        Quantity    <select class="quantity5" name="quantity5" onchange="claculateAmount5()">
+                                        <option value="1"> 1 </option>
+                                        <option value="2"> 2 </option>
+                                        <option value="3"> 3 </option>
+                                        <option value="4"> 4 </option>
+                                        <option value="5"> 5 </option>
+                                        <option value="6"> 6 </option>
+                                        <option value="7"> 7 </option>
+                                        <option value="8"> 8 </option>
+                                        <option value="9"> 9 </option>
+                                        <option value="10"> 10 </option>
+                                    </select>  
+                                    &nbsp; &nbsp; &nbsp;
+                        Amount <input class="amount5"  name="amount5">
+                    </div>
+                
+                
+                </div>
+                
+            </div>
+
+            <div class="col1-div">
+                <div class="img-div"> <img src="img2/download (1).jfif"> </div>
+                <div class="img-title-div"> 
+                    <div> <b>Milkshake</b> (large): <br>  Price: 10 SAR</div>
+                    <div class="amount-div"> 
+                        <label>Add to Cart 
+                            <input type="checkbox" id="check-item"    name="item6" class="item6" onchange="claculateAmount6()">
+                        </label>
+                        <br>
+                        Quantity    <select class="quantity6" name="quantity6" onchange="claculateAmount6()">
+                                        <option value="1"> 1 </option>
+                                        <option value="2"> 2 </option>
+                                        <option value="3"> 3 </option>
+                                        <option value="4"> 4 </option>
+                                        <option value="5"> 5 </option>
+                                        <option value="6"> 6 </option>
+                                        <option value="7"> 7 </option>
+                                        <option value="8"> 8 </option>
+                                        <option value="9"> 9 </option>
+                                        <option value="10"> 10 </option>
+                                    </select>  
+                                    &nbsp; &nbsp; &nbsp;
+                        Amount <input class="amount6"  name="amount6">
+                    </div>
+                
+                
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="total-amount-div">
+            Total Amount = 0
+
         </div>
 
 
         <script>
+            var total_Amount = 0;
+            var amount1 = 0;
+            var amount2 = 0;
+            var amount3 = 0;
+            var amount4 = 0;
+            var amount5 = 0;
+            var amount6 = 0;
 
             function claculateAmount()
             {
                 let price1 = 10;
                 let quantity1 = document.querySelector('.quantity1').value;
                 let item1 = document.querySelector('.item1').checked;
-                let amount1 = 0;
+                 amount1 = 0;
                 if(item1){
                     amount1 = quantity1 * price1 ;
                 } 
@@ -215,6 +321,8 @@
                     amount1 = 0;
                 }
                     document.querySelector('.amount1').value = amount1;
+                    totalAmount();
+                   
             }
 
             function claculateAmount2()
@@ -222,7 +330,7 @@
                 let price2 = 20;
                 let quantity2 = document.querySelector('.quantity2').value;
                 let item2 = document.querySelector('.item2').checked;
-                let amount2 = 0;
+                 amount2 = 0;
                 if(item2){
                     amount2 = quantity2 * price2 ;
                 } 
@@ -230,6 +338,7 @@
                     amount2 = 0;
                 }
                     document.querySelector('.amount2').value = amount2;
+                    totalAmount();
             }
 
             function claculateAmount3()
@@ -237,7 +346,7 @@
                 let price3 = 7;
                 let quantity3 = document.querySelector('.quantity3').value;
                 let item3 = document.querySelector('.item3').checked;
-                let amount3 = 0;
+                 amount3 = 0;
                 if(item3){
                     amount3 = quantity3 * price3 ;
                 } 
@@ -245,6 +354,60 @@
                     amount3 = 0;
                 }
                     document.querySelector('.amount3').value = amount3;
+                    totalAmount();
+            }
+
+            function claculateAmount4()
+            {
+                let price4 = 5;
+                let quantity4 = document.querySelector('.quantity4').value;
+                let item4 = document.querySelector('.item4').checked;
+                 amount4 = 0;
+                if(item4){
+                    amount4 = quantity4 * price4 ;
+                } 
+                else {
+                    amount4 = 0;
+                }
+                    document.querySelector('.amount4').value = amount4;
+                    totalAmount();
+            }
+
+            function claculateAmount5()
+            {
+                let price5 = 20;
+                let quantity5 = document.querySelector('.quantity5').value;
+                let item5 = document.querySelector('.item5').checked;
+                 amount5 = 0;
+                if(item5){
+                    amount5 = quantity5 * price5 ;
+                } 
+                else {
+                    amount5 = 0;
+                }
+                    document.querySelector('.amount5').value = amount5;
+                    totalAmount();
+            }
+
+            function claculateAmount6()
+            {
+                let price6 = 10;
+                let quantity6 = document.querySelector('.quantity6').value;
+                let item6 = document.querySelector('.item6').checked;
+                 amount6 = 0;
+                if(item6){
+                    amount6 = quantity6 * price6 ;
+                } 
+                else {
+                    amount6 = 0;
+                }
+                    document.querySelector('.amount6').value = amount6;
+                    totalAmount();
+            }
+
+            function totalAmount(){
+                total_Amount =  amount1 + amount2 +amount3 + amount4 + amount5 + amount6 ;
+                    document.querySelector('.total-amount-div').innerHTML = `Total Amount = ${total_Amount} SAR` ;
             }
 
 

@@ -32,7 +32,7 @@ body{
     }
 }
 
-.col1-div , .col2-div , .col3-div{
+.col1-div {
     border-width: 4px;
     border-color: black;
     border-style: solid;
@@ -64,19 +64,19 @@ body{
 .img-title-div{
     margin-top: 10px;
     padding: 4px;
-    font-size: 20px;
+    font-size: 30px;
     background-color: rgb(216, 213, 213);
     border-radius: 10px;
 
 }
 .amount-div{
-    font-size: 30px;
+    font-size: 35px;
     
    
 }
 .amount-div input{
     font-size: 30px;
-    width: 100px;
+    width: 60px;
     padding: ;
 }
 .amount-div select{
@@ -85,4 +85,19 @@ body{
 #check-item{
     height: 30px;
     width: 30px;
+}
+
+.total-amount-div{
+    background-color: rgb(25, 27, 27);
+    color: white;
+    font-size: 50px;
+    
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 20px;
+
+    border-width: 4px;
+    border-color: aqua;
+    border-style: solid;
+    padding: 30px 10px;
 }
